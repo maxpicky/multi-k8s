@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../simple-k8s"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
