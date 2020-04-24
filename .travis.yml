@@ -18,7 +18,7 @@ before_install:
     - docker build -t maxpicky/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-    - docker run -e CI=true maxpicky/docker-react npm run test
+    - docker run -e CI=true maxpicky/react-test npm run test
 
 deploy:
     provider: script
