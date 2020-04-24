@@ -11,6 +11,6 @@ docker push maxpicky/multi-server-k8s:$GIT_SHA
 docker push maxpicky/multi-worker-k8s:$GIT_SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=stephengrider/multi-server:$GIT_SHA
-kubectl set image deployments/client-deployment client=stephengrider/multi-client:$GIT_SHA
-kubectl set image deployments/worker-deployment worker=stephengrider/multi-worker:$GIT_SHA
+kubectl set image deployments/server-deployment server=maxpicky/multi-server:$GIT_SHA
+kubectl set image deployments/client-deployment client=maxpicky/multi-client:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=maxpicky/multi-worker:$GIT_SHA
